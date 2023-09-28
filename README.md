@@ -2,7 +2,7 @@
 
 ### Development
 
-Build the images and spin up the containers :
+Build the images and spin up the containers:
 
 ```sh
 $ docker-compose up -d --build
