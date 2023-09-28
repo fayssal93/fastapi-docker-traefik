@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yml
+    kompose.version: 1.30.0 (9d8dcb518)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: traefik
+  name: traefik
+  namespace: default
+spec:
+  ports:
+    - name: "8008"
+      port: 8008
+      targetPort: 80
+    - name: "8081"
+      port: 8081
+      targetPort: 8080
+  selector:
+    io.kompose.service: traefik
+status:
+  loadBalancer: {}
