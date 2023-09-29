@@ -35,7 +35,7 @@ pipeline {
                 script {
                     // Ajoutez ici vos étapes de test de l'application FastAPI si nécessaire
                     // Par exemple, vous pouvez utiliser des commandes curl pour effectuer des tests d'acceptation
-                    sh "curl http://localhost:8000" // Exemple de commande de test
+                    sh "curl http://fastapi.localhost:8081/" // Exemple de commande de test
                 }
             }
         }
