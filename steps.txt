@@ -1,0 +1,6 @@
+- Create manifeste kubernetes à partir de docker-compose pour cela nous allons utiliser Kompose.io 
+- Installe kompose en linux : curl -L https://github.com/kubernetes/kompose/releases/download/v1.30.0/kompose-linux-amd64 -o kompose
+    chmod +x kompose
+    sudo mv ./kompose /usr/local/bin/kompose
+- Générer les fichiers yaml de Kubernetes :  kompose convert -f docker-compose.yml 
+- Copier les fichiers yaml générére dans un dossier manifest-kubenrntes 
