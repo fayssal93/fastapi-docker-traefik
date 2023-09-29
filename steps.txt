@@ -4,3 +4,6 @@
     sudo mv ./kompose /usr/local/bin/kompose
 - Générer les fichiers yaml de Kubernetes :  kompose convert -f docker-compose.yml 
 - Copier les fichiers yaml générére dans un dossier manifest-kubenrntes 
+- Créer le Jenkinsfile 
+- créer les cérednetiel docker hub dans le serveur jenkins afin qu'il puisse pusher l'image dans docker hub 
+- 
